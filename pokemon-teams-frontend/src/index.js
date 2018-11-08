@@ -13,9 +13,9 @@ function init(){
     .then(json => {
       console.log(json)
       json.forEach(trainer => {
-        const trainersCollection = document.createElement('div')
-        trainersCollection.innerHTML = renderTrainers(trainer)
-        appContainer.appendChild(trainersCollection)
+        const trainersCollection = document.createElement('div') //new div
+        trainersCollection.innerHTML = renderTrainers(trainer) //set for render
+        appContainer.appendChild(trainersCollection)//append trainers collection
 
         addPoke()
         //releasePoke()
